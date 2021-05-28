@@ -3,7 +3,8 @@ import { StyleSheet } from 'react-native';
 export default StyleSheet.create({
     container: {
         flex: 1,
-        alignItems: 'center'
+        alignItems: 'center',
+        backgroundColor: "#caf7e3"
     },
     title: {
 
@@ -27,7 +28,7 @@ export default StyleSheet.create({
         paddingLeft: 16
     },
     button: {
-        backgroundColor: '#788eec',
+        backgroundColor: '#def9ce',
         marginLeft: 30,
         marginRight: 30,
         marginTop: 20,
@@ -37,7 +38,7 @@ export default StyleSheet.create({
         justifyContent: 'center'
     },
     buttonTitle: {
-        color: 'white',
+        color: 'black',
         fontSize: 16,
         fontWeight: "bold"
     },
@@ -51,7 +52,7 @@ export default StyleSheet.create({
         color: '#2e2e2d'
     },
     footerLink: {
-        color: "#788eec",
+        color: "black",
         fontWeight: "bold",
         fontSize: 16
     }

@@ -3,7 +3,7 @@ import React, { Component, useEffect, useState } from 'react'
 import { NavigationContainer,  DefaultTheme } from '@react-navigation/native'
 import {createAppContainer } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
-import { LoginScreen, HomeScreen, RegistrationScreen, Resource4, Screen1, Screen2, Screen3, Screen4, Page1, Page2, Page3, Page4} from './src/screens'
+import { LoginScreen, HomeScreen, RegistrationScreen, Resource4, Screen1, Screen2, Screen3, Screen4, Page1, Page2, Page3, Page4, StagePage1} from './src/screens'
 import { firebase } from './src/firebase/config'
 // import { createTabNavigator } from 'react-navigation-tabs';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
@@ -71,7 +71,9 @@ export default function App() {
           {props => <DashBoard {...props}/>}
         </Stack.Screen> */}
        
-        <Stack.Screen name="Registration" component={RegistrationScreen} />
+        <Stack.Screen name="Registration" component={RegistrationScreen} options={{ title: 'Register', headerStyle: {
+              backgroundColor: '#caf7e3'
+           } }}/>
        
         <Stack.Screen name="Resource4" component={Resource4} options={{ title: '', headerStyle: {
               backgroundColor: '#caf7e3'
@@ -94,6 +96,9 @@ export default function App() {
               backgroundColor: '#e4bac2'
            } }} />
             <Stack.Screen name="Page4" component={Page4} options={{ title: '', headerStyle: {
+              backgroundColor: '#c197d2'
+           } }} />
+            <Stack.Screen name="StagePage1" component={StagePage1} options={{ title: 'StagePage1', headerStyle: {
               backgroundColor: '#c197d2'
            } }} />
       </Stack.Navigator>

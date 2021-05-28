@@ -112,7 +112,7 @@ export default class Page1 extends React.Component {
                 fontStyle: "italic",
               }}
             >
-              Pregnancy, Mental Health, and COVID-1
+              Pregnancy, Mental Health, and COVID-19
             </Text>
             <Text
               style={{

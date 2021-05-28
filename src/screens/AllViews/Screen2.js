@@ -26,7 +26,7 @@ var infostorage = [];
 infostorage[0] = "this is some data 1";
 infostorage[1] = "this is some data 2";
 infostorage[2] = "this is some data 3";
-export default class Resource1 extends React.Component {
+export default class Screen2 extends React.Component {
   onpress1 = () => {
     this.props.navigation.navigate("Page1", { user });
     //this.componentDidsMount2

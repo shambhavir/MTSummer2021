@@ -1,10 +1,11 @@
-import * as React from "react";
+import React, { useRef, useState } from "react";
 import {
   ImageBackground,
   Button,
   View,
   Text,
   TouchableOpacity,
+  Animated,
   ScrollView,
 } from "react-native";
 import {
@@ -27,6 +28,28 @@ infostorage[0] = "this is some data 1";
 infostorage[1] = "this is some data 2";
 infostorage[2] = "this is some data 3";
 
+const FadeInView = (props) => {
+  const fadeAnim = useRef(new Animated.Value(0)).current; // Initial value for opacity: 0
+
+  React.useEffect(() => {
+    Animated.timing(fadeAnim, {
+      toValue: 1,
+      duration: 2000,
+      useNativeDriver: true,
+    }).start();
+  }, [fadeAnim]);
+
+  return (
+    <Animated.View // Special animatable View
+      style={{
+        ...props.style,
+        opacity: fadeAnim, // Bind opacity to animated value
+      }}
+    >
+      {props.children}
+    </Animated.View>
+  );
+};
 
 export default class Resource4 extends React.Component {
    onLinkPress1 = () => {
@@ -44,7 +67,9 @@ export default class Resource4 extends React.Component {
   render() {
     return (
       <View style={styles.container}>
+        
         <ScrollView>
+        <FadeInView>
         {/* <Text>{'\n'}</Text>
         <Text>{'\n'}</Text> */}
            <Text  style={{
@@ -235,7 +260,9 @@ export default class Resource4 extends React.Component {
               <View style={{ flex: 1, height: 100, width: 1000 }}></View>
             </View>
           </Card>
+          </FadeInView>
         </ScrollView>
+        
       </View>
     );
   }

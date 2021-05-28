@@ -87,6 +87,9 @@ export default class AppNavi extends Component {
            } }}/>
             <Stack.Screen name="Page3" component={Page3}  />
             <Stack.Screen name="Page4" component={Page4}  />
+            <Stack.Screen name="StagePage1" component={StagePage1} options={{ title: 'StagePage1', headerStyle: {
+              backgroundColor: '#c197d2'
+           } }} />
                   </>
                   
                   
