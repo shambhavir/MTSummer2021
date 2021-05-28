@@ -94,7 +94,7 @@ export default function App() {
               backgroundColor: '#e4bac2'
            } }} />
             <Stack.Screen name="Page4" component={Page4} options={{ title: '', headerStyle: {
-              backgroundColor: '#e4bad4'
+              backgroundColor: '#c197d2'
            } }} />
       </Stack.Navigator>
     </NavigationContainer>
