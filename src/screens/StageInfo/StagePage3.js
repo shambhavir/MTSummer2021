@@ -219,7 +219,7 @@ export default function StagePage1(props) {
                     }}
                 >
                     <View style={{ flexDirection: "center" }}>
-                    <Text style={{
+                        <Text style={{
                             fontFamily: "System",
                             fontSize: 20,
                             color: "white",
@@ -229,25 +229,25 @@ export default function StagePage1(props) {
                             fontStyle: "italic"
                         }}>Diet and Nutrition</Text>
                         <Text style={{
-                                fontFamily: "System",
-                                fontSize: 18,
-                                color: "white",
-                                paddingVertical: 8,
-                                paddingHorizontal: 15,
+                            fontFamily: "System",
+                            fontSize: 18,
+                            color: "white",
+                            paddingVertical: 8,
+                            paddingHorizontal: 15,
 
-                            }} >
-                        Most women will need to consume 300 calories more a day during the last 6 months of pregnancy. Weight gain during the second and third trimesters is typically around 3 to 4 pounds per month. 
+                        }} >
+                            Most women will need to consume 300 calories more a day during the last 6 months of pregnancy. Weight gain during the second and third trimesters is typically around 3 to 4 pounds per month.
 
                         </Text>
                         <Text style={{
-                                fontFamily: "System",
-                                fontSize: 18,
-                                color: "white",
-                                paddingVertical: 8,
-                                paddingHorizontal: 15,
+                            fontFamily: "System",
+                            fontSize: 18,
+                            color: "white",
+                            paddingVertical: 8,
+                            paddingHorizontal: 15,
 
-                            }} >
-                        Weight gain and maintaining weight is critical for a healthy pregnancy. Women who gain more than the recommended weight and do not lose weight within six months of giving birth may be at higher risk for being obese later in life.
+                        }} >
+                            Weight gain and maintaining weight is critical for a healthy pregnancy. Women who gain more than the recommended weight and do not lose weight within six months of giving birth may be at higher risk for being obese later in life.
 
                         </Text>
 
@@ -260,27 +260,27 @@ export default function StagePage1(props) {
                             fontWeight: "bold",
                             fontStyle: "italic"
                         }}>Sleep</Text>
-                         <Text style={{
-                                fontFamily: "System",
-                                fontSize: 18,
-                                color: "white",
-                                paddingVertical: 8,
-                                paddingHorizontal: 15,
+                        <Text style={{
+                            fontFamily: "System",
+                            fontSize: 18,
+                            color: "white",
+                            paddingVertical: 8,
+                            paddingHorizontal: 15,
 
-                            }} >
-                        It is recommended for most adults to get 7 to 9 hours of sleep a night. Pregnant women may have difficulty sleeping and obtaining the recommended amount of sleep for adults for a variety of reasons. 
+                        }} >
+                            It is recommended for most adults to get 7 to 9 hours of sleep a night. Pregnant women may have difficulty sleeping and obtaining the recommended amount of sleep for adults for a variety of reasons.
 
 
                         </Text>
                         <Text style={{
-                                fontFamily: "System",
-                                fontSize: 18,
-                                color: "white",
-                                paddingVertical: 8,
-                                paddingHorizontal: 15,
+                            fontFamily: "System",
+                            fontSize: 18,
+                            color: "white",
+                            paddingVertical: 8,
+                            paddingHorizontal: 15,
 
-                            }} >
-                        Commonly, women during their third trimester wake up more frequently due to any discomfort caused by the pregnancy or the need to use the restroom. A few suggestions to sleep better include exercise, keeping your bedroom dark and cool, and avoiding the use of technological devices that emit light.
+                        }} >
+                            Commonly, women during their third trimester wake up more frequently due to any discomfort caused by the pregnancy or the need to use the restroom. A few suggestions to sleep better include exercise, keeping your bedroom dark and cool, and avoiding the use of technological devices that emit light.
 
 
                         </Text>
@@ -290,7 +290,128 @@ export default function StagePage1(props) {
 
                 </Card>
 
+                <Card
+                    containerStyle={{
+                        flex: 1.3,
+                        backgroundColor: "#674b80",
+                        borderRadius: 20,
+                        shadowColor: "#000",
+                        shadowOffset: {
+                            width: 0,
+                            height: 6,
+                        },
+                        shadowOpacity: 0.37,
+                        shadowRadius: 7.49,
+                        width: 375,
+                        height: 1130,
+                        elevation: 12,
+                    }}
+                >
+                    <View style={{ flexDirection: "center" }}>
+                        <Text style={{
+                            fontFamily: "System",
+                            fontSize: 20,
+                            color: "white",
+                            paddingVertical: 8,
+                            paddingHorizontal: 15,
+                            fontWeight: "bold",
+                            fontStyle: "italic"
+                        }}>Prenatal Tests</Text>
+                        <Text style={{
+                            fontFamily: "System",
+                            fontSize: 18,
+                            color: "white",
+                            paddingVertical: 8,
+                            paddingHorizontal: 15,
+
+                        }} >
+                            <Text style={{
+
+                                fontWeight: "bold",
+
+                            }}>A biophysical profile (BPP) </Text>
+                        is taken during the third trimester and includes an ultrasound and a nonstress test to monitor the baby’s health. Using these tests, the health care provider can monitor the baby’s breathing, movement, muscle tone, heart rate, and amount of amniotic fluid.
+
+                        </Text>
+                        <Text style={{
+                            fontFamily: "System",
+                            fontSize: 18,
+                            color: "white",
+                            paddingVertical: 8,
+                            paddingHorizontal: 15,
+
+                        }} >
+                            <Text style={{
+
+                                fontWeight: "bold",
+
+                            }}>A glucose challenge screening </Text>
+                        is taken at 26 to 28 weeks of the pregnancy to determine if the mother is at risk for gestational diabetes. During this test, the mother consumes a special sugary drink and a blood sample is taken an hour later. The health care provider taking the test may recommend a glucose tolerance test depending on the results. The glucose tolerance test includes eating a special diet prior to the test, then not eating or drinking anything except water for 14 hours, and finally consuming a sugary drink and having blood tested every hour for 3 hours.
+
+                        </Text>
+                        <Text style={{
+                            fontFamily: "System",
+                            fontSize: 18,
+                            color: "white",
+                            paddingVertical: 8,
+                            paddingHorizontal: 15,
+
+                        }} >
+                            <Text style={{
+
+                                fontWeight: "bold",
+
+                            }}>The Group B streptococcus infection test </Text>
+                        is done near the end of the pregnancy, at roughly 36 to 37 weeks. The purpose of this test is to identify bacteria that can cause pneumonia or an infection to the newborn. During this test, a swab is taken from the vagina and rectum. The cells from the swab are then tested for bacteria that may pose a threat.
+
+                        </Text>
+                        <Text style={{
+                            fontFamily: "System",
+                            fontSize: 18,
+                            color: "white",
+                            paddingVertical: 8,
+                            paddingHorizontal: 15,
+
+                        }} >
+                            <Text style={{
+
+                                fontWeight: "bold",
+
+                            }}>The nonstress test </Text>
+                        is administered roughly 28 weeks in pregnancy to determine if the fetus is experiencing any type of stress. Most of the time, this test is only used if the baby is at risk. During this noninvasive test, the baby’s heart rate is measured by a belt placed on the mother’s belly. The baby’s heart rate will provide information about the baby’s oxygen supply and if further testing is needed.
+
+                        </Text>
+                      
+
+                       
+
+                    </View>
+
+                </Card>
                 <Text>{'\n'}</Text>
+
+                <Text style={{
+                    fontFamily: "System",
+                    fontSize: 20,
+                    color: "#674b80",
+                    paddingVertical: 8,
+                    paddingHorizontal: 15,
+                    fontWeight: "bold",
+                    fontStyle: "italic"
+                }}>Baby's Development</Text>
+                <Text
+                    style={{
+                        fontFamily: "System",
+                        fontSize: 18,
+                        color: "#674b80",
+                        paddingVertical: 8,
+                        paddingHorizontal: 15,
+
+                    }}
+                >
+                    At this time, the baby’s bones are formed, weight gain is increasing, and the baby is slowly getting into position for delivery. During roughly the 39th week, the baby is full-term and is in the head down position. Although healthy babies can differ in size and weight, the average weight when a baby is delivered is approximately 6 pounds 2 ounces to 9 pounds 2 ounces with an average height of  19 to 21 inches.
+
+            </Text>
                 <View style={{ justiftyContent: "center", alignItems: "center" }}>
                     <Text
                         style={{
@@ -298,14 +419,14 @@ export default function StagePage1(props) {
                             fontSize: 18,
                             color: "#674b80",
                             paddingVertical: 8,
-                            paddingHorizontal: 15,
+                            paddingHorizontal: 10,
                             fontWeight: "bold",
                             fontStyle: "italic",
                         }}
                     >
                         Found this snippet useful? Favorite it!
           </Text>
-          
+
                     <AntDesign
                         name="hearto"
                         size={28}
