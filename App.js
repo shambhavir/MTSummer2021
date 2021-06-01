@@ -98,8 +98,8 @@ export default function App() {
             <Stack.Screen name="Page4" component={Page4} options={{ title: '', headerStyle: {
               backgroundColor: '#c197d2'
            } }} />
-            <Stack.Screen name="StagePage1" component={StagePage1} options={{ title: 'StagePage1', headerStyle: {
-              backgroundColor: '#c197d2'
+            <Stack.Screen name="StagePage1" component={StagePage1} options={{ title: '', headerStyle: {
+              backgroundColor: '#e4bad4'
            } }} />
       </Stack.Navigator>
     </NavigationContainer>
