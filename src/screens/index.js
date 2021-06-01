@@ -23,6 +23,7 @@ export { default as Page2 } from './CovidInfo/Page2'
 export { default as Page3 } from './CovidInfo/Page3'
 export { default as Page4 } from './CovidInfo/Page4'
 export { default as StagePage1 } from './StageInfo/StagePage1'
+export { default as StagePage2 } from './StageInfo/StagePage2'
 
 // export { default as Favorites } from './Favorites/Favorites'
 

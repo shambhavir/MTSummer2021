@@ -28,6 +28,10 @@ export default class Screen1 extends React.Component {
         this.props.navigation.navigate("StagePage1", { user });
         //this.componentDidsMount2
       };
+      onpress2 = () => {
+        this.props.navigation.navigate("StagePage2", { user });
+        //this.componentDidsMount2
+      };
     render() {
         return (
             <View style={styles.container}>

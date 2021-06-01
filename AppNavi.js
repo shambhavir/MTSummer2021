@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {LoginScreen, HomeScreen, RegistrationScreen, Resource4, Screen1, Screen2, Screen3, Screen4, Page1, Page2, Page3, Page4} from './src/screens'
+import {LoginScreen, HomeScreen, RegistrationScreen, Resource4, Screen1, Screen2, Screen3, Screen4, Page1, Page2, Page3, Page4, StagePage1, StagePage2} from './src/screens'
 import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
 import { firebase } from './src/firebase/config'
@@ -89,6 +89,9 @@ export default class AppNavi extends Component {
             <Stack.Screen name="Page4" component={Page4}  />
             <Stack.Screen name="StagePage1" component={StagePage1} options={{ title: 'StagePage1', headerStyle: {
               backgroundColor: '#c197d2'
+           } }} />
+              <Stack.Screen name="StagePage2" component={StagePage2} options={{ title: '', headerStyle: {
+              backgroundColor: '#e4bad4'
            } }} />
                   </>
                   
