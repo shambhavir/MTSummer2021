@@ -21,6 +21,8 @@ import "firebase/auth";
 import "firebase/firestore";
 import "firebase/database";
 import styles from "./styles";
+import { Ionicons } from "@expo/vector-icons";
+import { AntDesign } from "@expo/vector-icons";
 
 
 export default function StagePage1(props) {
@@ -65,7 +67,20 @@ export default function StagePage1(props) {
 
           }}
         >
-          You may experience the following changes in the first trimester: extreme tiredness, swollen or tender breasts, swelling of the areolas (the dark colored area around the nipples), and development of small, white bumps . Additionally, your veins may become more noticeable around your breasts, you might have to urinate frequently (due to your uterus exerting more pressure on your bladder), and you may experience mood swings (due to surges in your progesterone and estrogen hormones).
+          If you’re trying to get pregnant, pregnancy tests may be taken on a regular basis. If you are not trying to get pregnant or do not have access to a pregnancy test, there are a few symptoms to look for such as: fatigue, food cravings, frequent urination, morning sickness (nausea and vomiting), dark skin around the areolas, and bloating (swelling). 
+
+            </Text>
+            <Text
+          style={{
+            fontFamily: "System",
+            fontSize: 18,
+            color: "#674b80",
+            paddingVertical: 8,
+            paddingHorizontal: 15,
+
+          }}
+        >
+          You may take first stage assessments at a doctor’s office. There should be a thorough evaluation of your and your partner’s medical history, a physical exam, and an examination to check the status of the fetus. 
             </Text>
         <Text style={{
           fontFamily: "System",
@@ -207,18 +222,34 @@ export default function StagePage1(props) {
           </Text>
 
         </Card>
-
-
-
-        {/* <Text    style={{
-                fontFamily: "System",
-                fontSize: 20,
-                color: "white",
+          <Text>{'\n'}</Text>
+        <View style={{ justiftyContent: "center", alignItems: "center" }}>
+          <Text
+            style={{
+              fontFamily: "System",
+              fontSize: 18,
+              color: "#674b80",
+              paddingVertical: 8,
+              paddingHorizontal: 15,
+              fontWeight: "bold",
+              fontStyle: "italic",
+            }}
+          >
+            Found this snippet useful? Favorite it!
+          </Text>
+            <AntDesign
+              name="hearto"
+              size={28}
+              style={{
+                color: "#674b80",
+                paddingHorizontal: 40,
                 paddingVertical: 8,
-                paddingHorizontal: 15,
-                fontWeight: "bold",
-                fontStyle:"italic"
-              }}>What should you expect during{'\n'}this period?</Text> */}
+              }}
+              // onPress={this.updateInfo1}
+            />
+            <Text>{"\n"}</Text>
+          </View>
+
       </ScrollView>
     </View>
   )
