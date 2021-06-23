@@ -82,5 +82,9 @@ export default StyleSheet.create({
     fadingContainer: {
         padding: 20,
         backgroundColor: "powderblue"
-      }
+      },
+      map: {
+        width: Dimensions.get('window').width,
+        height: Dimensions.get('window').height,
+      },
 })

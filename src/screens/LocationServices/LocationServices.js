@@ -31,30 +31,10 @@ import {
   SceneMap,
   TabView,
 } from "react-native-tab-view";
-import { createStackNavigator } from '@react-navigation/stack';
-const Stack = createStackNavigator();
+import MapView from 'react-native-maps';
 
 const user = firebase.auth().currentUser;
 
-var data2 = [];
-var infostorage = [];
-var infostorage = [];
-infostorage[0] = "Nutrition for {'\n'}you and{'\n'}your baby";
-infostorage[1] = "this is some data 2";
-infostorage[2] = "this is some data 3";
-
-var welcomeMsg = []
-// welcomeMsg[0] = "Welcome, New Mom!";
-// welcomeMsg[1] = "Welcome, Expecting Mom!"
-// welcomeMsg[2] = "Welcome!"
-data2[0] = "this is a test";
-const win = Dimensions.get("window");
-const ratio = win.width / 20;
-
-var welcome = ""
-// data1[0] = "this is some data 1"
-// data1[1] = "this is some data 2"
-// data1[2] = "this is some data 3"
 
 export default class LocationServices extends React.Component {
   
@@ -63,7 +43,11 @@ export default class LocationServices extends React.Component {
       <View
         style={styles.container}
       >
-        
+        <MapView style={{flex:1}}
+  region={{latitude: 38.890316999999996,
+  longitude: -77.1542221,
+  latitudeDelta: 0.005,
+  longitudeDelta: 0.005}}/>
       </View>
 
     );
