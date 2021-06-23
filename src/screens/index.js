@@ -25,6 +25,7 @@ export { default as Page4 } from './CovidInfo/Page4'
 export { default as StagePage1 } from './StageInfo/StagePage1'
 export { default as StagePage2 } from './StageInfo/StagePage2'
 export { default as StagePage3 } from './StageInfo/StagePage3'
+export { default as LocationServices } from './LocationServices/LocationServices'
 
 // export { default as Favorites } from './Favorites/Favorites'
 

@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {LoginScreen, HomeScreen, RegistrationScreen, Resource4, Screen1, Screen2, Screen3, Screen4, Page1, Page2, Page3, Page4, StagePage1, StagePage2, StagePage3} from './src/screens'
+import {LoginScreen, HomeScreen, RegistrationScreen, Resource4, Screen1, Screen2, Screen3, Screen4, Page1, Page2, Page3, Page4, StagePage1, StagePage2, StagePage3, LocationServices} from './src/screens'
 import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
 import { firebase } from './src/firebase/config'
@@ -95,6 +95,8 @@ export default class AppNavi extends Component {
            } }} />
              <Stack.Screen name="StagePage3" component={StagePage3} options={{ title: '', headerStyle: {
               backgroundColor: '#e4bac2'
+           } }} />
+             <Stack.Screen name="LocationServices" component={LocationServices} options={{ title: '', headerStyle: {
            } }} />
                   </>
                   

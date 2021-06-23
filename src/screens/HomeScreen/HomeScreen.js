@@ -65,7 +65,7 @@ export default class HomeScreen extends React.Component {
       testpush: infostorage[0],
     });
   };
-  
+
   state = {
     index: 0,
     routes: [
@@ -117,7 +117,7 @@ export default class HomeScreen extends React.Component {
         buttonColor2: "#67C495",
       });
       this.componentDidMount;
-      this.props.navigation.navigate("Resource4", {user});
+      this.props.navigation.navigate("Resource4", { user });
       //this.componentDidsMount2
     } else {
       this.setState({
@@ -126,76 +126,84 @@ export default class HomeScreen extends React.Component {
       });
     }
   };
-
+  onpress3 = () => {
+    if (!this.state.check2) {
+      this.setState({
+        check2: true,
+        buttonColor2: "#67C495",
+      });
+      this.componentDidMount;
+      this.props.navigation.navigate("LocationServices", { user });
+    } else {
+      this.setState({
+        check2: false,
+        buttonColor2: "#8fbc8f",
+      });
+    }
+  };
   render() {
     return (
       <View
-      style={styles.container}
+        style={styles.container}
       >
         <ScrollView>
-        <Text  style={{
-              fontFamily: "System",
-              fontSize: 50,
-              color: "#e4bad4",
-              fontWeight: "bold",
-              paddingVertical: 1,
-              paddingHorizontal: 10,
-            }}>Home</Text>
-    {/* <Text>{'\n'}</Text> */}
-        <Card
-          containerStyle={{
-            flex: 1.3,
-            backgroundColor: "#e4bad4",
-            borderRadius: 20,
-            shadowColor: "#000",
-            shadowOffset: {
-              width: 0,
-              height: 6,
-            },
-            shadowOpacity: 0.37,
-            shadowRadius: 7.49,
+          <Text style={{
+            fontFamily: "System",
+            fontSize: 50,
+            color: "#e4bad4",
+            fontWeight: "bold",
+            paddingVertical: 1,
+            paddingHorizontal: 10,
+          }}>Home</Text>
+          {/* <Text>{'\n'}</Text> */}
+          <Card
+            containerStyle={{
+              flex: 1.3,
+              backgroundColor: "#e4bad4",
+              borderRadius: 20,
+              shadowColor: "#000",
+              shadowOffset: {
+                width: 0,
+                height: 6,
+              },
+              shadowOpacity: 0.37,
+              shadowRadius: 7.49,
 
-            elevation: 12,
-          }}
-        >
-          
-        
-                 {/* <Card.Title style={{ padding: 10, margin: 10, borderRadius: 20, height: 120 }}>
-                     <Text >{welcome}</Text>
-                 </Card.Title>
-         
-         */}
-          
-          <Card.Title
-            style={{
-              fontFamily: "System",
-              fontSize: 20,
-              color: "#FFFFFF",
-              paddingVertical: 11,
-              paddingHorizontal: 10,
+              elevation: 12,
             }}
           >
-            Welcome Mom!
+
+
+            <Card.Title
+              style={{
+                fontFamily: "System",
+                fontSize: 20,
+                color: "#FFFFFF",
+                paddingVertical: 11,
+                paddingHorizontal: 10,
+              }}
+            >
+              Welcome Mom!
           </Card.Title>
-          <Card.Divider style={{ backgroundColor: "white" }} />
+            <Card.Divider style={{ backgroundColor: "white" }} />
 
-          <Text
-            style={{
-              fontFamily: "System",
-              fontSize: 20,
-              color: "#FFFFFF",
-              paddingVertical: 1,
-              paddingHorizontal: 10,
-            }}
-          >
-            Explore resources that cater to new moms, expecting moms, and anyone who just wants to learn!
+            <Text
+              style={{
+                fontFamily: "System",
+                fontSize: 20,
+                color: "#FFFFFF",
+                paddingVertical: 1,
+                paddingHorizontal: 10,
+              }}
+            >
+              Explore resources that cater to new moms, expecting moms, and anyone who just wants to learn!
           </Text>
 
-          <Card.Image
-            style={{ width: 325, height: 150 }}
-            source={require("../../../assets/homepageLogo.png")}
-          ></Card.Image>
-           
+            <Card.Image
+              style={{ width: 325, height: 150 }}
+              source={require("../../../assets/homepageLogo.png")}
+            ></Card.Image>
+
             <Text
               style={{
                 fontFamily: "System",
@@ -204,60 +212,127 @@ export default class HomeScreen extends React.Component {
                 paddingVertical: 15,
                 paddingHorizontal: 10,
                 fontWeight: "bold",
-                textAlign:"center"
+                textAlign: "center"
               }}
-              onPress={this.onpress2} 
+              onPress={this.onpress2}
             >
               Explore
-            </Text> 
-              </Card>
-        <Text>{"\n"}</Text>
+            </Text>
+          </Card>
+          <Text>{"\n"}</Text>
 
-        <Card
-          containerStyle={{
-            flex: 0.85,
-            backgroundColor: "#e4bad4",
-            borderRadius: 20,
-            shadowColor: "#000",
-            shadowOffset: {
-              width: 0,
-              height: 6,
-            },
-            shadowOpacity: 0.37,
-            shadowRadius: 7.49,
+          <Card
+            containerStyle={{
+              flex: 1.3,
+              backgroundColor: "#e4bad4",
+              borderRadius: 20,
+              shadowColor: "#000",
+              shadowOffset: {
+                width: 0,
+                height: 6,
+              },
+              shadowOpacity: 0.37,
+              shadowRadius: 7.49,
 
-            elevation: 12,
-          }}
-        >
-          <Card.Title
-            style={{
-              fontFamily: "System",
-              fontSize: 20,
-              color: "#FFFFFF",
-              paddingVertical: 7,
-              paddingHorizontal: 10,
+              elevation: 12,
             }}
           >
-           Today's Touch
-          </Card.Title>
-          <Card.Divider style={{ backgroundColor: "white" }} />
-         
-         
-            <Text  style={{
+
+
+            <Card.Title
+              style={{
                 fontFamily: "System",
                 fontSize: 20,
                 color: "#FFFFFF",
-               
+                paddingVertical: 11,
+                paddingHorizontal: 10,
+              }}
+            >
+              Near Me
+          </Card.Title>
+            <Card.Divider style={{ backgroundColor: "white" }} />
+
+            <Text
+              style={{
+                fontFamily: "System",
+                fontSize: 20,
+                color: "#FFFFFF",
+                paddingVertical: 1,
+                paddingHorizontal: 10,
+              }}
+            >
+              Need immediate medical attention? Or maybe you need a consultation! Find an intake center near you!
+          </Text>
+
+            <Card.Image
+              style={{ width: 325, height: 150 }}
+              source={require("../../../assets/steth.png")}
+            ></Card.Image>
+
+            <Text
+              style={{
+                fontFamily: "System",
+                fontSize: 20,
+                color: "white",
+                paddingVertical: 15,
+                paddingHorizontal: 10,
+                fontWeight: "bold",
+                textAlign: "center"
+              }}
+              onPress={this.onpress3}
+            >
+              Go
+            </Text>
+          </Card>
+
+          <Text>{"\n"}</Text>
+
+
+          <Card
+            containerStyle={{
+              flex: 0.85,
+              backgroundColor: "#e4bad4",
+              borderRadius: 20,
+              shadowColor: "#000",
+              shadowOffset: {
+                width: 0,
+                height: 6,
+              },
+              shadowOpacity: 0.37,
+              shadowRadius: 7.49,
+
+              elevation: 12,
+            }}
+          >
+            <Card.Title
+              style={{
+                fontFamily: "System",
+                fontSize: 20,
+                color: "#FFFFFF",
+                paddingVertical: 7,
+                paddingHorizontal: 10,
+              }}
+            >
+              Today's Touch
+          </Card.Title>
+            <Card.Divider style={{ backgroundColor: "white" }} />
+
+
+            <Text style={{
+              fontFamily: "System",
+              fontSize: 20,
+              color: "#FFFFFF",
+
             }}>Nutrition for you and your baby!</Text>
             <Card.Image
-            style={{ width: 325, height: 150, alignContent:'center' }}
-            source={require("../../../assets/todaystouch.png")}
-          ></Card.Image>
-         
-        </Card>
+              style={{ width: 325, height: 150, alignContent: 'center' }}
+              source={require("../../../assets/todaystouch.png")}
+            ></Card.Image>
+
+          </Card>
         </ScrollView>
       </View>
-      
+
     );
   }
 }
