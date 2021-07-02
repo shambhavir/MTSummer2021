@@ -3,7 +3,7 @@ import React, { Component, useEffect, useState } from 'react'
 import { NavigationContainer,  DefaultTheme } from '@react-navigation/native'
 import {createAppContainer } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
-import { LoginScreen, HomeScreen, RegistrationScreen, Resource4, Screen1, Screen2, Screen3, Screen4, Page1, Page2, Page3, Page4} from './src/screens'
+import { LoginScreen, HomeScreen, RegistrationScreen, Resource4, Screen1, Screen2, Screen3, Screen4, Page1, Page2, Page3, Page4, firstTrimester, secondTrimester, thirdTrimester, preconception, pregnancy, postpregnancy} from './src/screens'
 import { firebase } from './src/firebase/config'
 // import { createTabNavigator } from 'react-navigation-tabs';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
@@ -76,13 +76,16 @@ export default function App() {
         <Stack.Screen name="Resource4" component={Resource4} options={{ title: '', headerStyle: {
               backgroundColor: '#caf7e3'
            } }} />
-        <Stack.Screen name="Screen1" component={Screen1}  options={{ title: '', headerStyle: {
+        <Stack.Screen name="Screen1" component={Screen1}  options={{ title: 'Stages of Pregnancy & You', headerStyle: {
               backgroundColor: '#caf7e3'
            } }}/>
         <Stack.Screen name="Screen2" component={Screen2}   options={{ title: 'COVID-19 & Pregnancy', headerStyle: {
               backgroundColor: '#caf7e3'
            } }}/>
-        <Stack.Screen name="Screen3" component={Screen3} />
+           <Stack.Screen name="Screen3" component={Screen3}   options={{ title: 'Your General Health', headerStyle: {
+              backgroundColor: '#caf7e3'
+           } }}/>
+        
         <Stack.Screen name="Screen4" component={Screen4} />
         <Stack.Screen name="Page1" component={Page1} options={{ title: '', headerStyle: {
               backgroundColor: '#e4bad4'
@@ -94,6 +97,24 @@ export default function App() {
               backgroundColor: '#e4bac2'
            } }} />
             <Stack.Screen name="Page4" component={Page4} options={{ title: '', headerStyle: {
+              backgroundColor: '#c197d2'
+           } }} />
+           <Stack.Screen name="firstTrimester" component={firstTrimester} options={{ title: '', headerStyle: {
+              backgroundColor: '#c197d2'
+           } }} />
+           <Stack.Screen name="secondTrimester" component={secondTrimester} options={{ title: '', headerStyle: {
+              backgroundColor: '#c197d2'
+           } }} />
+           <Stack.Screen name="thirdTrimester" component={thirdTrimester} options={{ title: '', headerStyle: {
+              backgroundColor: '#c197d2'
+           } }} />
+           <Stack.Screen name="preconception" component={preconception} options={{ title: '', headerStyle: {
+              backgroundColor: '#c197d2'
+           } }} />
+           <Stack.Screen name="pregnancy" component={pregnancy} options={{ title: '', headerStyle: {
+              backgroundColor: '#c197d2'
+           } }} />
+           <Stack.Screen name="postpregnancy" component={postpregnancy} options={{ title: '', headerStyle: {
               backgroundColor: '#c197d2'
            } }} />
       </Stack.Navigator>

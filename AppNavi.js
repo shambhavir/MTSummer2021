@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {LoginScreen, HomeScreen, RegistrationScreen, Resource4, Screen1, Screen2, Screen3, Screen4, Page1, Page2, Page3, Page4} from './src/screens'
+import {LoginScreen, HomeScreen, RegistrationScreen, Resource4, Screen1, Screen2, Screen3, Screen4, Page1, Page2, Page3, Page4, firstTrimester, secondTrimester, thirdTrimester, preconception, pregnancy, postpregnancy} from './src/screens'
 import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
 import { firebase } from './src/firebase/config'
@@ -87,6 +87,12 @@ export default class AppNavi extends Component {
            } }}/>
             <Stack.Screen name="Page3" component={Page3}  />
             <Stack.Screen name="Page4" component={Page4}  />
+            <Stack.Screen name="firstTrimester" component={firstTrimester}  />
+            <Stack.Screen name="secondTrimester" component={secondTrimester}  />
+            <Stack.Screen name="thirdTrimester" component={thirdTrimester}  />
+            <Stack.Screen name="preconception" component={preconception}  />
+            <Stack.Screen name="pregnancy" component={pregnancy}  />
+            <Stack.Screen name="postpregnancy" component={postpregnancy}  />
                   </>
                   
                   
