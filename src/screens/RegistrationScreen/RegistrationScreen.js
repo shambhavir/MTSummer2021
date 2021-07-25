@@ -141,6 +141,22 @@ export default function RegistrationScreen({ navigation }) {
 
                 </View>
 
+                <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'center' }}>
+                    {/* <Text>Share Data? </Text> */}
+                    <CheckBox
+                      //  status={checked}
+                      title = "I agree to the Terms of Service and Privacy Policy."
+                      checked = {checked}
+                      onPress={() => setChecked(!checked)}
+                        //status={checked ? 'checked' : 'unchecked'}
+                        // onPress={() => {
+                        //     setChecked(!checked);
+                        // }}
+                    />
+
+                </View>
+                
+
                 <TouchableOpacity
                     style={styles.button}
                     onPress={() => onRegisterPress()}>
