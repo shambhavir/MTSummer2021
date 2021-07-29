@@ -62,15 +62,8 @@ export default class AppNavi extends Component {
   
         return (
           <NavigationContainer>
-            <Stack.Navigator initialRouteName="Login">
+            <Stack.Navigator initialRouteName="Home">
               {
-                this.state.loggedIn == false ? (
-                  <>
-                    <Stack.Screen name="Login" component={LoginScreen} />
-                    <Stack.Screen name="Registration" component={RegistrationScreen} />
-  
-                  </>
-                ) : 
                   <>
                     {/* <Stack.Screen name="StackTwoScreen" component={StackTwoScreen} /> */}
                     <Stack.Screen name="HomeScreen" component={HomeScreen}/>

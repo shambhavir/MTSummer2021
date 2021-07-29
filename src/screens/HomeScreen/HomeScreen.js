@@ -57,14 +57,14 @@ var welcome = ""
 // data1[2] = "this is some data 3"
 
 export default class HomeScreen extends React.Component {
-  updateInfo1 = () => {
-    const favRef = firebase
-      .database()
-      .ref("users/" + firebase.auth().currentUser.uid + "/" + "AllFaves");
-    favRef.push({
-      testpush: infostorage[0],
-    });
-  };
+  // updateInfo1 = () => {
+  //   const favRef = firebase
+  //     .database()
+  //     .ref("users/" + firebase.auth().currentUser.uid + "/" + "AllFaves");
+  //   favRef.push({
+  //     testpush: infostorage[0],
+  //   });
+  // };
   
   state = {
     index: 0,
@@ -117,7 +117,7 @@ export default class HomeScreen extends React.Component {
         buttonColor2: "#67C495",
       });
       this.componentDidMount;
-      this.props.navigation.navigate("Resource4", {user});
+      this.props.navigation.navigate("Resource4");
       //this.componentDidsMount2
     } else {
       this.setState({
@@ -135,11 +135,11 @@ export default class HomeScreen extends React.Component {
         <ScrollView>
         <Text  style={{
               fontFamily: "System",
-              fontSize: 50,
+              fontSize: 60,
               color: "#e4bad4",
               fontWeight: "bold",
               paddingVertical: 1,
-              paddingHorizontal: 10,
+              paddingHorizontal: 15,
             }}>Home</Text>
     {/* <Text>{'\n'}</Text> */}
         <Card
@@ -156,6 +156,8 @@ export default class HomeScreen extends React.Component {
             shadowRadius: 7.49,
 
             elevation: 12,
+            width: 335,
+            height: 620
           }}
         >
           
@@ -169,7 +171,7 @@ export default class HomeScreen extends React.Component {
           <Card.Title
             style={{
               fontFamily: "System",
-              fontSize: 20,
+              fontSize: 40,
               color: "#FFFFFF",
               paddingVertical: 11,
               paddingHorizontal: 10,
@@ -182,7 +184,7 @@ export default class HomeScreen extends React.Component {
           <Text
             style={{
               fontFamily: "System",
-              fontSize: 20,
+              fontSize: 25,
               color: "#FFFFFF",
               paddingVertical: 1,
               paddingHorizontal: 10,
@@ -192,14 +194,14 @@ export default class HomeScreen extends React.Component {
           </Text>
 
           <Card.Image
-            style={{ width: 325, height: 150 }}
+            style={{ width: 325, height: 200 }}
             source={require("../../../assets/homepageLogo.png")}
           ></Card.Image>
            
             <Text
               style={{
                 fontFamily: "System",
-                fontSize: 20,
+                fontSize: 30,
                 color: "white",
                 paddingVertical: 15,
                 paddingHorizontal: 10,
@@ -213,7 +215,7 @@ export default class HomeScreen extends React.Component {
               </Card>
         <Text>{"\n"}</Text>
 
-        <Card
+        {/* <Card
           containerStyle={{
             flex: 0.85,
             backgroundColor: "#e4bad4",
@@ -254,7 +256,7 @@ export default class HomeScreen extends React.Component {
             source={require("../../../assets/todaystouch.png")}
           ></Card.Image>
          
-        </Card>
+        </Card> */}
         </ScrollView>
       </View>
       

@@ -28,19 +28,19 @@ infostorage[1] = "this is some data 2";
 infostorage[2] = "this is some data 3";
 export default class Resource1 extends React.Component {
   onpress1 = () => {
-    this.props.navigation.navigate("Page1", { user });
+    this.props.navigation.navigate("Page1");
     //this.componentDidsMount2
   };
   onpress2 = () => {
-    this.props.navigation.navigate("Page2", { user });
+    this.props.navigation.navigate("Page2");
     //this.componentDidsMount2
   };
   onpress3 = () => {
-    this.props.navigation.navigate("Page3", { user });
+    this.props.navigation.navigate("Page3");
     //this.componentDidsMount2
   };
   onpress4 = () => {
-    this.props.navigation.navigate("Page4", { user });
+    this.props.navigation.navigate("Page4");
     //this.componentDidsMount2
   };
   render() {
@@ -222,11 +222,10 @@ export default class Resource1 extends React.Component {
                 paddingHorizontal: 13,
               }}
             >
-              The COVID-19 vaccines have been approved by the FDA and authorized
-              for emergency use by the US government. All vaccines have
+              The COVID-19 vaccines have been given emergency use authorization by the FDA. All vaccines have
               undergone very strict testing and abide by regulation standards,
               even more so than some other vaccines that have been approved for
-              public use.
+              public use. 
             </Text>
             <Text
               style={{

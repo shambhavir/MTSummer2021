@@ -28,15 +28,15 @@ infostorage[1] = "this is some data 2";
 infostorage[2] = "this is some data 3";
 export default class Resource1 extends React.Component {
   onpress1 = () => {
-    this.props.navigation.navigate("preconception", { user });
+    this.props.navigation.navigate("preconception");
     //this.componentDidsMount2
   };
   onpress2 = () => {
-    this.props.navigation.navigate("pregnancy", { user });
+    this.props.navigation.navigate("pregnancy");
     //this.componentDidsMount2
   };
   onpress3 = () => {
-    this.props.navigation.navigate("postpregnancy", { user });
+    this.props.navigation.navigate("postpregnancy");
     //this.componentDidsMount2
   };
   
@@ -74,10 +74,7 @@ export default class Resource1 extends React.Component {
               >
                 Interested in Becoming{"\n"}Pregnant?
               </Text>
-              <Card.Image
-                style={{ width: 140, height: 59, flexWrap: "wrap" }}
-                source={require("../../../assets/belly.png")}
-              ></Card.Image>
+             
             </View>
             <Card.Divider style={{ backgroundColor: "white" }} />
             <Text
@@ -91,6 +88,7 @@ export default class Resource1 extends React.Component {
             >
               Preconception health + how to prepare
             </Text>
+            <View style={{ flexDirection: "row" }}>
             <Text
               style={{
                 fontFamily: "System",
@@ -104,6 +102,11 @@ export default class Resource1 extends React.Component {
             >
               Learn More
             </Text>
+            <Card.Image
+                style={{ width: 270, height: 130, flexWrap: "wrap" }}
+                source={require("../../../assets/preginterest.png")}
+              ></Card.Image>
+            </View>
           </Card>
           <Card
             containerStyle={{
@@ -135,10 +138,7 @@ export default class Resource1 extends React.Component {
               >
                 Health During{"\n"}Pregnancy
               </Text>
-              <Card.Image
-                style={{ width: 110, height: 59, flexWrap: "wrap" }}
-                source={require("../../../assets/babyclothes.png")}
-              ></Card.Image>
+              
             </View>
             <Card.Divider style={{ backgroundColor: "white" }} />
             <Text
@@ -153,6 +153,7 @@ export default class Resource1 extends React.Component {
               There are many factors that will affect your pregnancy such as your nutrition, mental and physical health, 
               and your sleep schedule. It is important to follow a routine or schedule to ensure a smooth pregnancy.  
             </Text>
+            <View style={{ flexDirection: "row" }}>
             <Text
               style={{
                 fontFamily: "System",
@@ -166,6 +167,11 @@ export default class Resource1 extends React.Component {
             >
               Learn More
             </Text>
+            <Card.Image
+                style={{ width: 250, height: 100, flexWrap: "wrap" }}
+                source={require("../../../assets/healthduringpreg.png")}
+              ></Card.Image>
+            </View>
           </Card>
 
           <Card
@@ -198,10 +204,7 @@ export default class Resource1 extends React.Component {
               >
                 Post Pregnancy Care
               </Text>
-              <Card.Image
-                style={{ width: 110, height: 59, flexWrap: "wrap" }}
-                source={require("../../../assets/needle.png")}
-              ></Card.Image>
+           
             </View>
             <Card.Divider style={{ backgroundColor: "white" }} />
             <Text
@@ -216,6 +219,7 @@ export default class Resource1 extends React.Component {
               After giving birth, you will be very busy with your new family member! However, it is important that
               you take care of your mental health and body while nurturing your baby.  
             </Text>
+            <View style={{ flexDirection: "row" }}>
             <Text
               style={{
                 fontFamily: "System",
@@ -229,6 +233,11 @@ export default class Resource1 extends React.Component {
             >
               Learn More
             </Text>
+            <Card.Image
+                style={{ width: 250, height: 150, flexWrap: "wrap" }}
+                source={require("../../../assets/postpreg.png")}
+              ></Card.Image>
+            </View>
           </Card>
 
           

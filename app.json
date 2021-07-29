@@ -4,11 +4,11 @@
     "slug": "MothersTouch",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/updatedmtlogocopy.png",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/updatedmtlogocopy.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#E0FBD3"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -17,7 +17,8 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "mt.motherstouch"
     },
     "android": {
       "adaptiveIcon": {

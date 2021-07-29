@@ -7,7 +7,15 @@ import { LoginScreen, HomeScreen, RegistrationScreen, Resource4, Screen1, Screen
 import { firebase } from './src/firebase/config'
 // import { createTabNavigator } from 'react-navigation-tabs';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-
+import {
+  ImageBackground,
+  Button,
+  View,
+  Text,
+  TouchableOpacity,
+  ScrollView,
+  Image
+} from "react-native";
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator(); 
@@ -57,23 +65,29 @@ export default function App() {
 
   return (
    <NavigationContainer  >
-      <Stack.Navigator initialRouteName={user ? 'Home' : 'Login'} >
-        <Stack.Screen name="HomeScreen"  options={{ title: '', headerStyle: {
+      <Stack.Navigator initialRouteName={'Home'} >
+        <Stack.Screen name="HomeScreen"  options={{ 
+          title: '',
+          headerStyle: {
               backgroundColor: '#caf7e3'
            } }}>
           {props => <HomeScreen {...props} extraData={user}/>}
         </Stack.Screen>
         {/* <Stack.Screen name="Home" component={HomeScreen} /> */}
-        <Stack.Screen name="Login" component={LoginScreen} options={{ title: 'Login', headerStyle: {
+        {/* <Stack.Screen name="Login" component={LoginScreen} options={{ title: 'Login', headerStyle: {
               backgroundColor: '#caf7e3'
-           } }}  />
+           } }}  /> */}
         {/* <Stack.Screen name="Dashboard">
           {props => <DashBoard {...props}/>}
         </Stack.Screen> */}
        
         <Stack.Screen name="Registration" component={RegistrationScreen} />
        
-        <Stack.Screen name="Resource4" component={Resource4} options={{ title: '', headerStyle: {
+        <Stack.Screen name="Resource4" component={Resource4} options={{ title: <Image style={{
+  height: 45,
+  width: 100
+  }}
+  resizeMode="contain" source={require("./assets/updatedmtlogo.png")}></Image>, headerStyle: {
               backgroundColor: '#caf7e3'
            } }} />
         <Stack.Screen name="Screen1" component={Screen1}  options={{ title: 'Stages of Pregnancy & You', headerStyle: {
@@ -100,22 +114,22 @@ export default function App() {
               backgroundColor: '#c197d2'
            } }} />
            <Stack.Screen name="firstTrimester" component={firstTrimester} options={{ title: '', headerStyle: {
-              backgroundColor: '#c197d2'
+              backgroundColor: '#e4bad4'
            } }} />
            <Stack.Screen name="secondTrimester" component={secondTrimester} options={{ title: '', headerStyle: {
-              backgroundColor: '#c197d2'
+              backgroundColor: '#a0829b'
            } }} />
            <Stack.Screen name="thirdTrimester" component={thirdTrimester} options={{ title: '', headerStyle: {
-              backgroundColor: '#c197d2'
+              backgroundColor: '#e4bac2'
            } }} />
            <Stack.Screen name="preconception" component={preconception} options={{ title: '', headerStyle: {
-              backgroundColor: '#c197d2'
+              backgroundColor: '#e4bac2'
            } }} />
            <Stack.Screen name="pregnancy" component={pregnancy} options={{ title: '', headerStyle: {
-              backgroundColor: '#c197d2'
+              backgroundColor: '#a0829b'
            } }} />
            <Stack.Screen name="postpregnancy" component={postpregnancy} options={{ title: '', headerStyle: {
-              backgroundColor: '#c197d2'
+              backgroundColor: '#a0829b'
            } }} />
       </Stack.Navigator>
     </NavigationContainer>

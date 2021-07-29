@@ -163,32 +163,7 @@ export default class Page1 extends React.Component {
               Pregnancy and motherhood can already take a toll on a new mother’s emotional wellbeing and the COVID-19 pandemic welcomes strong emotions of its own. If you’re experiencing symptoms of depression after pregnancy, express your concerns to your healthcare provider immediately. 
 
             </Text>
-            <View style={{ justiftyContent: "center", alignItems: "center" }}>
-          <Text
-            style={{
-              fontFamily: "System",
-              fontSize: 18,
-              color: "#674b80",
-              paddingVertical: 8,
-              paddingHorizontal: 8,
-              fontWeight: "bold",
-              fontStyle: "italic",
-            }}
-          >
-            Found this snippet useful? Favorite it!
-          </Text>
-            <AntDesign
-              name="hearto"
-              size={28}
-              style={{
-                color: "#674b80",
-                paddingHorizontal: 40,
-                paddingVertical: 8,
-              }}
-              onPress={this.updateInfo1}
-            />
-            <Text>{"\n"}</Text>
-          </View>
+           
            
         </ScrollView>
       </View>

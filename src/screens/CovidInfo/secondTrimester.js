@@ -246,21 +246,7 @@ export default class Page2 extends React.Component {
                  questions or concerns you may have. 
 
             </Text>
-            <Text   style={{
-                fontFamily: "System",
-                fontSize: 18,
-                color: "white",
-                paddingVertical: 8,
-                paddingHorizontal: 15,
-                fontWeight: "bold",
-                fontStyle:"italic"
-
-               
-              }}>Found this snippet useful? Favorite it!</Text>
-              <View style={{justiftyContent:"center", alignItems:"center"}}>
-            <AntDesign name="hearto" size={28} style={{color: "white", paddingHorizontal: 40, paddingVertical: 8}} onPress={this.updateInfo1} />
-            <Text>{'\n'}</Text>
-            </View> 
+           
           </FadeInView>
         </ScrollView>
       </View>

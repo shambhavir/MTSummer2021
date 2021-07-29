@@ -73,7 +73,7 @@ export default class Page2 extends React.Component {
           flex: 1,
           alignItems: "center",
           justifyContent: "center",
-          backgroundColor: "#a0829b",
+          backgroundColor: "#e4bac2",
         }}
       >
         <ScrollView>
@@ -99,7 +99,7 @@ export default class Page2 extends React.Component {
                 height: 170,
                 flexWrap: "wrap",
               }}
-              source={require("../../../assets/newborn.png")}
+              source={require("../../../assets/precon.png")}
             ></Image>
 
             <Text
@@ -297,21 +297,7 @@ export default class Page2 extends React.Component {
 
 
             </Text>
-            <Text   style={{
-                fontFamily: "System",
-                fontSize: 18,
-                color: "white",
-                paddingVertical: 8,
-                paddingHorizontal: 15,
-                fontWeight: "bold",
-                fontStyle:"italic"
-
-               
-              }}>Found this snippet useful? Favorite it!</Text>
-              <View style={{justiftyContent:"center", alignItems:"center"}}>
-            <AntDesign name="hearto" size={28} style={{color: "white", paddingHorizontal: 40, paddingVertical: 8}} onPress={this.updateInfo1} />
-            <Text>{'\n'}</Text>
-            </View> 
+          
           </FadeInView>
         </ScrollView>
       </View>

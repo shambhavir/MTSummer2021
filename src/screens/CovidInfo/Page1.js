@@ -63,6 +63,7 @@ export default class Page1 extends React.Component {
         <View style={styles.container}>
             <ScrollView>
             <FadeInView>
+           
             <Text    style={{
                 fontFamily: "System",
                 fontSize: 30,
@@ -171,21 +172,7 @@ export default class Page1 extends React.Component {
 
 
             </Text>
-            <Text   style={{
-                fontFamily: "System",
-                fontSize: 18,
-                color: "#674b80",
-                paddingVertical: 8,
-                paddingHorizontal: 15,
-                fontWeight: "bold",
-                fontStyle:"italic"
-
-               
-              }}>Found this snippet useful? Favorite it!</Text>
-              <View style={{justiftyContent:"center", alignItems:"center"}}>
-            <AntDesign name="hearto" size={28} style={{color: "#674b80", paddingHorizontal: 40, paddingVertical: 8}} onPress={this.updateInfo1} />
-            <Text>{'\n'}</Text>
-            </View> 
+           
             {/* <Text
    Found this snippet useful? Favorite it!
     /> */}

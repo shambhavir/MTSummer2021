@@ -629,32 +629,7 @@ Current Thoughts on the Safety of the Vaccine for Pregnant Women
           >
         Our bodies break down the mRNA in the vaccine within hours/days, which means that it is unlikely that these particles will reach the placenta and affect the child in any way. Of course, these thoughts are simply speculation because no vaccine trials involving pregnant women have concluded yet. If you live in a setting where you are particularly susceptible to COVID, such as a group home, or are particularly at risk for complications, consider speaking to a health professional to weigh your options.
           </Text>
-          <View style={{ justiftyContent: "center", alignItems: "center" }}>
-          <Text
-            style={{
-              fontFamily: "System",
-              fontSize: 18,
-              color: "#674b80",
-              paddingVertical: 8,
-              paddingHorizontal: 15,
-              fontWeight: "bold",
-              fontStyle: "italic",
-            }}
-          >
-            Found this snippet useful? Favorite it!
-          </Text>
-            <AntDesign
-              name="hearto"
-              size={28}
-              style={{
-                color: "#674b80",
-                paddingHorizontal: 40,
-                paddingVertical: 8,
-              }}
-              onPress={this.updateInfo1}
-            />
-            <Text>{"\n"}</Text>
-          </View>
+         
         </ScrollView>
       </View>
     );

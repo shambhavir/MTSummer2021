@@ -41,15 +41,15 @@ infostorage[1] = "this is some data 2";
 infostorage[2] = "this is some data 3";
 export default class Resource1 extends React.Component {
   onpress1 = () => {
-    this.props.navigation.navigate("firstTrimester", { user });
+    this.props.navigation.navigate("firstTrimester");
     //this.componentDidsMount2
   };
   onpress2 = () => {
-    this.props.navigation.navigate("secondTrimester", { user });
+    this.props.navigation.navigate("secondTrimester");
     //this.componentDidsMount2
   };
   onpress3 = () => {
-    this.props.navigation.navigate("thirdTrimester", { user });
+    this.props.navigation.navigate("thirdTrimester");
     //this.componentDidsMount2
   };
   
@@ -70,7 +70,7 @@ export default class Resource1 extends React.Component {
               shadowOpacity: 0.37,
               shadowRadius: 7.49,
               width: 375,
-              height: 380,
+              height: 360,
               elevation: 12,
             }}
           >
@@ -87,10 +87,7 @@ export default class Resource1 extends React.Component {
               >
                 First Trimester
               </Text>
-              <Card.Image
-                style={{ width: 140, height: 59, flexWrap: "wrap" }}
-                source={require("../../../assets/belly.png")}
-              ></Card.Image>
+              
             </View>
             <Card.Divider style={{ backgroundColor: "white" }} />
             <Text
@@ -98,12 +95,14 @@ export default class Resource1 extends React.Component {
                 fontFamily: "System",
                 fontSize: 18,
                 color: "#F8F4FF",
-                paddingVertical: 8,
+                paddingVertical: 11,
                 paddingHorizontal: 13,
               }}
             >
-              Your pregnancy's first trimester is one of the most important stages for fetal development. Click learn more to get more information on what to expect and learn about fetal development!
+              Your pregnancy's first trimester is one of the most important stages for fetal development. Find out everything you need to know on fetal development. 
             </Text>
+
+            <View style={{ flexDirection: "row" }}>
             <Text
               style={{
                 fontFamily: "System",
@@ -117,6 +116,10 @@ export default class Resource1 extends React.Component {
             >
               Learn More
             </Text>
+            <Card.Image
+                style={{ width: 300, height: 120, flexWrap: "wrap" }}
+                source={require("../../../assets/updatedmask.png")}
+              ></Card.Image></View>
           </Card>
           <Card
             containerStyle={{
@@ -148,10 +151,7 @@ export default class Resource1 extends React.Component {
               >
                 Second Trimester
               </Text>
-              <Card.Image
-                style={{ width: 110, height: 59, flexWrap: "wrap" }}
-                source={require("../../../assets/babyclothes.png")}
-              ></Card.Image>
+              
             </View>
             <Card.Divider style={{ backgroundColor: "white" }} />
             <Text
@@ -163,8 +163,10 @@ export default class Resource1 extends React.Component {
                 paddingHorizontal: 13,
               }}
             >
-              The second trimester is the second stage of your pregnancy. Click learn more to learn about your second trimester! 
+              The second trimester is the second stage of your pregnancy. Two-thirds of the way there! 
             </Text>
+            <Text>{'\n'}</Text>
+            <View style={{ flexDirection: "row" }}>
             <Text
               style={{
                 fontFamily: "System",
@@ -178,6 +180,11 @@ export default class Resource1 extends React.Component {
             >
               Learn More
             </Text>
+            <Card.Image
+                style={{ width: 300, height: 130, flexWrap: "wrap" }}
+                source={require("../../../assets/st.png")}
+              ></Card.Image>
+            </View>
           </Card>
 
           <Card
@@ -210,10 +217,6 @@ export default class Resource1 extends React.Component {
               >
                 Third Trimester
               </Text>
-              <Card.Image
-                style={{ width: 110, height: 59, flexWrap: "wrap" }}
-                source={require("../../../assets/needle.png")}
-              ></Card.Image>
             </View>
             <Card.Divider style={{ backgroundColor: "white" }} />
             <Text
@@ -225,8 +228,12 @@ export default class Resource1 extends React.Component {
                 paddingHorizontal: 13,
               }}
             >
-              The third trimester of pregnancy begins around week 27 and is the last stage until approximately your 9th month. Click on learn more to get more information on the third trimester and preparing yourself for your newest family member!
+              The third trimester of pregnancy begins around week 27 and is the last stage. Prepare to welcome your newest family member!
             </Text>
+            <Text>{'\n'}</Text>
+
+            <View style={{ flexDirection: "row" }}>
+
             <Text
               style={{
                 fontFamily: "System",
@@ -240,6 +247,11 @@ export default class Resource1 extends React.Component {
             >
               Learn More
             </Text>
+            <Card.Image
+                style={{ width: 300, height: 130, flexWrap: "wrap" }}
+                source={require("../../../assets/hn.png")}
+              ></Card.Image>
+            </View>
           </Card>
 
           
